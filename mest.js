@@ -1,12 +1,9 @@
 mest = ["Amaka", "Tino", "Tumi", "Cave"]
-function print(arr,deli){
+function print(arr, delimiter){
     var out = ""
     arr.forEach(function(item){
         out+=item
-        // arr[arr.length-1]!==item ? out+=deli : out 
-        if (arr.indexOf(item) < arr.length-1){
-            out+=deli
-        }
+        arr[arr.length-1]!==item ? out+=deli : out
     })
     return out
 }
